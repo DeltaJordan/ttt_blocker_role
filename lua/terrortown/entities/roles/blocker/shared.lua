@@ -52,15 +52,12 @@ if SERVER then
 	end)
 
 	hook.Add('TTT2PostPlayerDeath', 'TTT2BlockerDeath', function(victim, _, _)
+		LANG.MsgAll("ttt2_blocker_role_death", nil, MSG_MSTACK_WARN)
+
 		-- Identify all of the current dead players if the Blocker dies
 		if victim:GetSubRole() == ROLE_BLOCKER then
 			for _, ply in ipairs(player.GetAll()) do
 				if not ply:Alive() then
-					--
-					--
-					-- TODO - have the roles announced publicly, not just having the players confirmed as dead
-					--
-					--
 					ply:ConfirmPlayer(true)
 				end
 			end

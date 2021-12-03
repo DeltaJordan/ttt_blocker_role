@@ -7,3 +7,6 @@ L["body_found_" .. BLOCKER.abbr] = "They were a Blocker!"
 L["search_role_" .. BLOCKER.abbr] = "This person was a Blocker!"
 L["target_" .. BLOCKER.name] = "Blocker"
 L["ttt2_desc_" .. BLOCKER.name] = [[The Blocker is a Traitor that prevents anyone from identifying bodies until the Blocker is dead.]]
+
+-- OTHER ROLE LANGUAGE STRINGS
+L["ttt2_blocker_role_death"] = "The Blocker has died! All bodies have been confirmed!"
