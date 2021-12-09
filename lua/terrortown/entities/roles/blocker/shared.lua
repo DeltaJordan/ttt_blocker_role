@@ -52,8 +52,6 @@ if SERVER then
 			idPlayer:PrintMessage(HUD_PRINTTALK, 'Cannot identify bodies while the Blocker is alive!')
 			return false
 		end
-
-		return true
 	end)
 
 	hook.Add('TTT2PostPlayerDeath', 'TTT2BlockerDeath', function(victim, _, _)
